@@ -16,5 +16,4 @@ jobs:
           node-version: '18'
       - run: npm install
       - run: npx husky install
-      - run: git add .
-      - run: git commit -m "chore:"
+      - run: npx lint-staged
