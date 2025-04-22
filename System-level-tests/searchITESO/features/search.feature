@@ -1,9 +1,6 @@
-Feature: Google Search
-  As a user
-  I want to search for "Hello, world!" on Google
-  So that I can see the search results page
+Feature: ITESO Homepage Search
 
-  Scenario: Searching for "Hello, world!" on Google
-    Given I am on the Google homepage
-    When I search for "Hello, world!"
-    Then the title should start with "Hello, world!"
+Scenario: User searches for carreras on ITESO website
+  Given the user opens the browser and navigates to 'iteso.mx'
+  When the user searches for "carreras" on the ITESO homepage
+  Then the user should see results related to "carreras"
